@@ -1,0 +1,9 @@
+maths=["Raju","Ashok","Rose","Rock","Ram"]
+social=["Arun","Anu","Ram","Akhila","Ashok"]
+computer=["Simran","Rock","Sam","Suresh","Ashok"]
+m=set(maths)
+s=set(social)
+c=set(computer)
+print("Three subjects: ",list(m&s&c))
+x=(m&s)|(s&c)|(m&c)
+print("Two subjects: ",list(x-(m&s&c)))
