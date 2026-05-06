@@ -1,0 +1,11 @@
+a = int(input("Enter any number: "))
+c = {}
+
+for i in str(a):
+    if i not in c:
+        c[i] = 1
+    else:
+        c[i] = c[i] + 1
+
+d=[i[1] for i in c.items() if i[1]>1]
+print(len(d))
